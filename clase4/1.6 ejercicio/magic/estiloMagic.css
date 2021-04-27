@@ -1,0 +1,10 @@
+.oculto{
+    width: 650px;
+    height: 410px;
+    display:none;
+}
+.cuadrado{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+}
