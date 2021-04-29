@@ -1,0 +1,39 @@
+#imagen{
+    width: 325px;
+    height: 350px;
+    margin: 10px; 
+    border: 2px solid black;
+    padding: 10px;
+    background-color: burlywood;
+}
+#titulo{
+    margin-top: 24px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#opciones{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+#texto{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#fondoHistoria{
+    background-color: blueviolet;
+}
+#fondoFinal{
+    background-color: darkblue;
+    color: white;
+}
+#separador{
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color:black;
+}
+#linkFinal{
+    float: right;
+    color:white;
+}
