@@ -67,6 +67,9 @@ Luego de intentar modificar el código diría que su mayor ventaja es el poder r
 Si bien es cierto que es probable que mi falta de experiencia en el lenguaje
 podría impedir que encontrara una mejor solución, si intentaba usar la función cambiar
 con parámetros el código no cumplia con modificar el tamaño del texto al momento del click. 
+En cuanto a inconvenientes, sería principalmente la comprensión de su utilidad. Al verlo por
+primera vez no parecía tener una función clara hasta que tuve que modificarla, ahí fue
+más claro.
 
 
 */
