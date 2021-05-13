@@ -1,11 +1,11 @@
-#imperio{
+.imperio{
     background-color: red;
 }
-#rebeldes{
+.rebeldes{
     background-color: blue;
 }
 #darthVader{
-    font-size: 130%;
+    font-size: 150%;
 }
 #luke{
     font-style: italic;
