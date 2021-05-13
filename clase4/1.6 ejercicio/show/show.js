@@ -9,10 +9,10 @@ boton[2].addEventListener("click", function(){imagenes[2].classList.toggle("ocul
     no funcionaba. No me gusta como luce, pero así funciona.
 */
 
-var imagen = document.querySelectorAll("img")
 var apagar = function(){
     this.classList.toggle("oculto")
 }
-for(var i = 0; i < imagen.length; i++){
-    imagen[i].addEventListener("click", apagar)
+
+for(var i = 0; i < imagenes.length; i++){
+    imagenes[i].addEventListener("click", apagar)
 }

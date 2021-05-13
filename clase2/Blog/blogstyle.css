@@ -14,10 +14,10 @@
     width: 300px;
     height: 300px;
 }
-#subespecies{
+.subespecies{
     font-size: 130%;
 }
-#imSubes{
+.imSubes{
     height: 312px;
     width: 500px;
     border: 2px solid;
@@ -28,7 +28,7 @@
     color:gray;
     background-color:gray
 }
-#parrafo{
+.parrafo{
     line-height: 22px;
 }
 #tabla{
