@@ -37,7 +37,7 @@ color: #000000;
 .barraUsuario{
     position: absolute;
 width: 400px;
-height: 520px;
+height: 570px;
 left: 0px;
 top: 124px;
 background: #C4C4C4;
@@ -82,15 +82,21 @@ box-sizing: border-box;
 }
 
 .descuento2{
-    left: 960px;
+    left: 880px;
     top: 136px;
     background-color:rgb(59, 212, 212);
 }
 
 .descuento3{
     left: 520px;
-    top: 406px;
+    top: 424px;
     background-color: rgb(59, 212, 212);
+}
+
+.descuento4{
+    left: 880px;
+    top: 424px;
+    background-color: rgb(240, 231, 105);
 }
 
 .textDescuento{
