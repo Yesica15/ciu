@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href='login.css' rel='stylesheet' type='text/css'>`
+</head>
+<body>
+    <div class="barraSuperior">
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Etevos.png">
+        <p class="titulo">Ministerio de salud de la Ciudad de Buenos Aires</p>
+    </div>
+    <div class="boxLogin">
+        <p class="textBody">Iniciar Sesión</p>
+        <form action="paginaPrin.html" method="POST" id="login" name="" onsubmit="return validacion()">
+            <input class="opcionUser" type="text" id="username" name="username" placeholder="DNI sin puntos">
+            <input class="opcionPass"type="password" id="password" name="password" placeholder="Contrase&ntilde;a">
+            <button class="botonLogin" type="submit">Iniciar</button>
+        </form>
+        <p class="textAyuda">Si no puedes iniciar sesión haz click aquí</p>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

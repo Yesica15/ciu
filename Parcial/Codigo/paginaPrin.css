@@ -1,0 +1,110 @@
+.barraSuperior{
+    position: absolute;
+    width: 1310px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #F4F4F4;
+    opacity: 0.8;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    position: absolute;
+width: 120px;
+height: 68px;
+left: 30px;
+top: 16px;
+}
+
+.titulo{
+    position: absolute;
+width: 780px;
+height: 42px;
+left: 330px;
+top: 4px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+}
+
+.barraUsuario{
+    position: absolute;
+width: 400px;
+height: 520px;
+left: 0px;
+top: 124px;
+background: #C4C4C4;
+}
+
+.textUsuario{
+    text-align: center;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+
+.imagenUsuario{
+    display:block;
+margin:auto;
+    width: 150px;
+height: 150px;
+
+background: #C4C4C4;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
+
+.boxDescuento{
+    position: absolute;
+    width: 300px;
+    height: 240px;
+    
+    background: #C4C4C4;
+    border-radius: 20px;
+}
+
+.descuento1{
+    left: 520px;
+    top: 136px;
+}
+
+.descuento2{
+    left: 960px;
+    top: 136px;
+}
+
+.descuento3{
+    left: 520px;
+    top: 406px;
+}
+
+.textDescuento{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 50px;
+    line-height: 0.5
+    ; 
+
+}
+.textFarmacia{
+    margin-left: 30px;
+    font-size: 32px;
+}
+
+.textValido{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+}
