@@ -70,41 +70,49 @@ box-sizing: border-box;
     position: absolute;
     width: 300px;
     height: 240px;
-    
-    background: #C4C4C4;
+    border: 1px solid #000000;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
 
 .descuento1{
     left: 520px;
     top: 136px;
+    background-color: rgb(240, 231, 105);
 }
 
 .descuento2{
     left: 960px;
     top: 136px;
+    background-color:rgb(59, 212, 212);
 }
 
 .descuento3{
     left: 520px;
     top: 406px;
+    background-color: rgb(59, 212, 212);
 }
 
 .textDescuento{
-    margin-top: 10px;
-    margin-left: 30px;
-    font-size: 50px;
-    line-height: 0.5
-    ; 
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-size: 42px;
+    line-height: 0.8; 
 
 }
 .textFarmacia{
+    position: absolute;
+    text-align: center;
+    left: 5px;
+    top: 100px;
     margin-left: 30px;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .textValido{
-    margin-top: 40px;
-    margin-left: 30px;
+    margin-top: 210px;
+    margin-right: 10px;
     font-size: 20px;
+    text-align:right;
 }

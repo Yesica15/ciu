@@ -2,7 +2,7 @@ function validacion() {
     var usuario = document.getElementById("username").value
     var pass = document.getElementById("password").value
     if( usuario == null || usuario.length == 0 || pass == null || pass.length==0 ) {
-        alert('[ERROR] Alguno de los campos ingresados está vacío');
+        alert('[ERROR] Alguno de los campos pedidos está vacío');
         return false;
     }
     if (isNaN(usuario) ) {
