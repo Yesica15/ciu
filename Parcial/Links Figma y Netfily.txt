@@ -1,0 +1,3 @@
+Figma: https://www.figma.com/file/14x4l9uoNTjj2BR6gWDim4/Parcial?node-id=8%3A2
+Netlify:
+https://competent-davinci-d3eea9.netlify.app
