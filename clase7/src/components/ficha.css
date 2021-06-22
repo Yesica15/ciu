@@ -1,0 +1,27 @@
+.imagen{
+    max-height:350px;
+}
+
+.Posicion-Ficha{
+    justify-content: center;
+}
+
+.ColorImagen{
+    background-color: darkslategrey;
+    border: rgb(0, 0, 0) 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ColorDatos{
+    background-color:dimgray;
+    text-align: center;
+    border: rgb(0, 0, 0) 2px solid;   
+}
+.NombrePok{
+    text-transform: capitalize;
+}
+.Margen{
+    margin: 20px;
+}
