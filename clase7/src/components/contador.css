@@ -1,0 +1,9 @@
+.NotaContador{
+    background-color:dimgray;
+    border: rgb(0, 0, 0) 2px solid;
+    border-top-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

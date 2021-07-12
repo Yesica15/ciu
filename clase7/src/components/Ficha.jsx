@@ -7,8 +7,9 @@ const Ficha = ({ numero, nombre}) => {
     
     const num = numero.game_index === undefined ? '--' : numero.game_index
     const nom = nombre.name === undefined ? '--' : nombre.name
-    const imagen = numero.game_index === undefined ? 'https://pbs.twimg.com/profile_images/1143663837389807616/RHGpo2F-_400x400.png'
+    const imagen = numero.game_index === undefined ? 'https://the-artifice.com/wp-content/uploads/2015/09/Pokemon-logo.jpg'
     :'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+ numero.game_index+'.png';
+    //Si cualquiera de las imagenes no es visible es propable que dejara de estar en linea, principalmente la que usé de portada
 
     return ( 
         <Fragment>
@@ -20,7 +21,7 @@ const Ficha = ({ numero, nombre}) => {
                         <h3 className="NombrePok">Nombre: {nom}</h3>
                     </Col>
                     <Col className="ColorImagen">
-                        <Image src={imagen} thumbnail className="imagen"/>
+                        <Image src={imagen} thumbnail className="Imagen"/>
                     </Col>
                 </Row>
             </Container>       

@@ -3,13 +3,16 @@ import {Button, Row, Col, Container, Alert} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Ficha from './components/Ficha'; 
+import Cabecera from './components/Cabecera';
+import Contador from './components/Contador';
 
 function App() {
-
+  //datos para Ficha
   const [numero, setNumero] = useState({});
   const [nombre, setNombre] = useState({});
+  //número para consultar a la api
   var valor;
-  
+
   // Consultar la API y traerla 
   const consultarAPI = async () => {
     try{
@@ -23,24 +26,20 @@ function App() {
     }
   };
   
-  // asigna a valor un número aleatorio dentro del rango
+  // Asigna a valor un número aleatorio dentro del rango
   const cargarAleatorio = ()  => {
-    valor = Math.floor((Math.random() * (152)))+1;
+    actualizarError(false);//si existe el error de la busqueda, lo quita
+    valor = Math.floor((Math.random() * (151)))+1;
     consultarAPI()
   }
 
-
-  // Cuando intenté poner el formulario de busqueda en un componente, 
-  // la variable valor tenía un delay para recibir, al punto en que 
-  // necesitaba presionar dos veces el botón para
-  // que el dato aparezca en pantalla. 
-  // Me gustaría alguna sugerencia para poder separarlo y emprolijar el código.
+  // Datos para formulario
   const [numBus, setNumbus] = useState({
     valor:''
   });
   const [error, actualizarError] = useState (false);
 
-  // asigna a valor el valor que subió el usuario
+  // Asigna a valor el dato que subió el usuario
   const handleChange = e => {
     setNumbus({
         ...numBus,
@@ -50,23 +49,36 @@ function App() {
 
   const cargarBusqueda = e =>{
     e.preventDefault();
-    valor = numBus.valor;
-    if (valor > 151 || valor.trim()==='0'){
+    valor = numBus.valor==='' ? 0 : numBus.valor;//si el dato es vacío arroja error en patalla
+    if (valor > 151 || valor===0){
       actualizarError(true);
       return;
     }
     actualizarError(false);
     consultarAPI()
     setNumbus({
-      numBus: ''
+      valor:''
     })
   }
 
+  // Cuando intenté poner el formulario de busqueda en un componente con
+  // sus funciones (numBus, error, cargarBusqueda y handleChange),  
+  // la variable valor tenía un delay para recibir los datos, al punto en que 
+  // necesitaba presionar dos veces el botón para que la interacción ocurra y
+  // la ficha aparezca en pantalla. 
+  // Me gustaría alguna sugerencia para poder separarlo y emprolijar el código.
+
+
+
+  // Datos para contador
+  // No use localstorage simplemente por no encontrar mucho sentido en la app
+  // recordar los vistos. Esta estructura solo se usa para contar los pokemons
+  // que salieron en el momento.
+  const [registrados, setRegistrados] = useState([]);
+
   return (
     <Fragment>
-      <header className="App-header">
-        <h1>Conoce a los pokemons de la primera generación</h1>
-      </header>
+      <Cabecera/>
       <div className="App-body">
         <Container>
           <Row>
@@ -75,7 +87,7 @@ function App() {
                 <label>Buscar por número:<input 
                   type="text"
                   name="valor"
-                  value={valor}
+                  value={numBus.valor}
                   placeholder="Número del pokemon"
                   className="form-control"
                   onChange={handleChange}
@@ -84,8 +96,9 @@ function App() {
                   type="submit">
                   Buscar
                 </Button>
-            </form>
-          </Col>
+              </form>
+              <h5>{ error ? <Alert variant='danger' className="Alerta"> Ingresa un número del 1 al 151 </Alert> : null }</h5>
+            </Col>
             <Col className="Boton-Ale"> 
               <Button 
                 variant="success"
@@ -94,7 +107,6 @@ function App() {
               </Button>
             </Col>
           </Row>
-          { error ? <Alert variant='danger'> La primera generación va del 1 al 151 </Alert> : null }
         </Container>
         <Row>
           <Ficha
@@ -102,7 +114,13 @@ function App() {
             nombre = {nombre}
           />
         </Row>
-        
+        <Row>
+          <Contador
+            numero = {numero}
+            registrados = {registrados}
+            setRegistrados = {setRegistrados}
+          />
+        </Row>
       </div>
     </Fragment>
   );
